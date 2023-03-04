@@ -12,7 +12,8 @@ struct RecipeTabView: View {
         
         TabView {
             
-            Text("Featured View")
+            // Create an instance of the Featured view
+            RecipeFeaturedView()
                 .tabItem {
                     VStack{
                         Image(systemName: "star.fill")
@@ -20,6 +21,7 @@ struct RecipeTabView: View {
                     }
                 }
             
+            // Create an instance of the Recipe List view
             RecipeListView()
                 .tabItem {
                     VStack {
@@ -29,6 +31,8 @@ struct RecipeTabView: View {
                     
                 }
         }
+        //Create an environment object modifier
+        .environmentObject(RecipeModel())
     }
 }
 
