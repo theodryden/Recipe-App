@@ -8,4 +8,4 @@ Features
 - The ability to navigate into individual recipe pages
 - Clean UI/UX design
 
-
+Inspired by CodeWithChris
